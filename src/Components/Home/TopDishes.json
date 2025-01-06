@@ -1,0 +1,128 @@
+[
+    {
+        "id":"1",
+        "image":"./public/images/burger.jpg",
+        "title":"Burger",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 200",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"2",
+        "image":"./public/images/Momos.jpg",
+        "title":"Momos",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.9",
+        "price":"₹ 100",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"3",
+        "image":"./public/images/Pizza.jpg",
+        "title":"Pizza",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.1",
+        "price":"₹ 500",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"4",
+        "image":"./public/images/pasta.jpg",
+        "title":"Pasta",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.2",
+        "price":"₹ 200",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"5",
+        "image":"./public/images/Salad.jpg",
+        "title":"Salad",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.6",
+        "price":"₹ 300",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"6",
+        "image":"./public/images/veg-rolls.jpg",
+        "title":"Veg-Rolls",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 180",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"7",
+        "image":"./public/images/sandwich.jpg",
+        "title":"Sandwich",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 80",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"8",
+        "image":"./public/images/fried chicken.jpg",
+        "title":"Chicken",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.0",
+        "price":"₹ 600",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"9",
+        "image":"./public/images/soup.jpg",
+        "title":"Soup",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 100",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"10",
+        "image":"./public/images/noodles.jpg",
+        "title":"Noodles",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 230",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"11",
+        "image":"./public/images/tea.jpg",
+        "title":"Tea",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 50",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"12",
+        "image":"./public/images/deserts.jpg",
+        "title":"Deserts",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 400",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"13",
+        "image":"./public/images/cake.jpg",
+        "title":"Cake",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.5",
+        "price":"₹ 280",
+        "add":"Add to Cart"
+    },
+    {
+        "id":"14",
+        "image":"./public/images/coffee.jpg",
+        "title":"Coffee",
+        "description":"Food provides essential nutrients for overall health and well-being",
+        "rating":"4.8",
+        "price":"₹ 300",
+        "add":"Add to Cart"
+    }
+]
