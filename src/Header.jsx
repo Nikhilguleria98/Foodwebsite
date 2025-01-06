@@ -73,9 +73,19 @@ const Header = () => {
             >
               Login
             </NavLink>
-            <div className="flex text-xl rounded-md w-12 justify-center h-10 items-center shadow-xl text-orange-500">
+            {/* <div className="flex text-xl rounded-md w-12 justify-center h-10 items-center shadow-xl text-orange-500">
               <FaShoppingCart />
-            </div>
+            </div> */}
+                 <NavLink
+              to="/cart"
+              className={({ isActive }) =>
+                `flex text-xl rounded-md w-12 justify-center h-10 items-center shadow-xl text-orange-500 ${
+                  isActive ? "text-orange-500" : ""
+                }`
+              }
+            >
+              <FaShoppingCart />
+              </NavLink>
           </div>
 
           {/* Mobile Menu Button */}

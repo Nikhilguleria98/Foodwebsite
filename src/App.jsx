@@ -6,6 +6,7 @@ import Layout from './Layout.jsx'
 import Home from './Components/Home/Home.jsx'
 import AboutUs from './Components/AboutUS/AboutUs.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+import CartPage from './Components/Cart/Cart.jsx'
 
 
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                {
                 path:"menu",
                 element:<Menu/>
+                 },
+               {
+                path:"cart",
+                element:<CartPage/>
                  },
 
     ]
