@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import CartIcon from "./Components/Cart/CartIcon";
 
 const NavLinkItem = ({ to, children, toggleMenu }) => (
   <NavLink
@@ -55,9 +56,9 @@ const Header = () => {
               <NavLinkItem to="/menu" toggleMenu={toggleMenu}>
                 Menu
               </NavLinkItem>
-              <NavLinkItem to="/Blog" toggleMenu={toggleMenu}>
+              {/* <NavLinkItem to="/Blog" toggleMenu={toggleMenu}>
                 Our Branches
-              </NavLinkItem>
+              </NavLinkItem> */}
             </ul>
           </div>
 
@@ -78,13 +79,9 @@ const Header = () => {
             </div> */}
                  <NavLink
               to="/cart"
-              className={({ isActive }) =>
-                `flex text-xl rounded-md w-12 justify-center h-10 items-center shadow-xl text-orange-500 ${
-                  isActive ? "text-orange-500" : ""
-                }`
-              }
+             
             >
-              <FaShoppingCart />
+              <CartIcon />
               </NavLink>
           </div>
 
@@ -124,9 +121,12 @@ const Header = () => {
               transition={{ type: "spring", stiffness: 300, damping: 40 }}
             >
               <ul className="space-y-5">
-                <div className="flex text-2xl text-orange-500 rounded-md w-12 justify-center h-10 items-center shadow-xl ">
-                  <FaShoppingCart />
-                </div>
+              <NavLink
+              to="/cart"
+             
+            >
+              <CartIcon />
+              </NavLink>
 
                 <div className="flex flex-col gap-2 justify-center">
                   <NavLinkItem to="/" toggleMenu={toggleMenu}>
@@ -138,9 +138,9 @@ const Header = () => {
                   <NavLinkItem to="/Room" toggleMenu={toggleMenu}>
                     Menu
                   </NavLinkItem>
-                  <NavLinkItem to="/Blog" toggleMenu={toggleMenu}>
+                  {/* <NavLinkItem to="/Blog" toggleMenu={toggleMenu}>
                     Our Branches
-                  </NavLinkItem>
+                  </NavLinkItem> */}
                   <NavLinkItem to="/contact" toggleMenu={toggleMenu}>
                     Contact
                   </NavLinkItem>

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 
 const CartPage = () => {
-  const { cartItems, removeFromCart, addToCart } = useContext(StoreContext);
+  const { cartItems, removeFromCart, addToCart , increaseQuantity } = useContext(StoreContext);
 
   const calculateTotal = () => {
     return Object.keys(cartItems).reduce((total, itemID) => {
@@ -34,7 +34,8 @@ const CartPage = () => {
 
                 <div className="flex items-center space-x-4">
                   <button
-                    onClick={() => addToCart(itemID)} // Increase quantity
+                    // onClick={() => addToCart(itemID)}   
+                     onClick={() => increaseQuantity(item.id)} // Increase quantity
                     className="bg-orange-500 text-white px-3 py-2 rounded-lg hover:bg-orange-600"
                   >
                     +

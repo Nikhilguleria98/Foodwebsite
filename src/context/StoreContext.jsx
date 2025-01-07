@@ -1,13 +1,22 @@
-import { createContext, useState } from "react";
-import menuData from '../Components/Menu/Menu.json'; // Ensure this path is correct
+import { createContext, useState, useEffect } from "react";
+import menuData from '../Components/Menu/Menu.json'; 
+import { div } from "framer-motion/client";
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-  const [cartItems, setCartItems] = useState({});
+  //  localStorage 
+  const [cartItems, setCartItems] = useState(() => {
+    const savedCart = localStorage.getItem("cartItems");
+    return savedCart ? JSON.parse(savedCart) : {};
+  });
+
+ 
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const addToCart = (itemID, category) => {
-    // Find the item in the correct category
     const item = menuData[category]?.find((item) => item.id === itemID);
 
     if (!item) {
@@ -17,7 +26,8 @@ const StoreContextProvider = (props) => {
 
     if (!cartItems[itemID]) {
       setCartItems((prev) => ({ ...prev, [itemID]: { ...item, quantity: 1 } }));
-      alert(`${item.name} has been added to your cart!`);
+      // alert(`${item.name} has been added to your cart!`);
+      
     } else {
       setCartItems((prev) => ({
         ...prev,
@@ -30,7 +40,7 @@ const StoreContextProvider = (props) => {
   const removeFromCart = (itemID) => {
     const currentQuantity = cartItems[itemID]?.quantity;
     if (currentQuantity === 1) {
-      const { [itemID]: _, ...rest } = cartItems; // Remove the item from the cart
+      const { [itemID]: _, ...rest } = cartItems; 
       setCartItems(rest);
     } else if (currentQuantity > 1) {
       setCartItems((prev) => ({
@@ -40,16 +50,26 @@ const StoreContextProvider = (props) => {
     }
   };
 
-  const contextvalue = {
+  const increaseQuantity = (itemID) => {
+    if (cartItems[itemID]) {
+      setCartItems((prev) => ({
+        ...prev,
+        [itemID]: { ...prev[itemID], quantity: prev[itemID].quantity + 1 },
+      }));
+    }
+  };
+
+  const contextValue = {
     menuData,
     cartItems,
     setCartItems,
     addToCart,
     removeFromCart,
+    increaseQuantity,
   };
 
   return (
-    <StoreContext.Provider value={contextvalue}>
+    <StoreContext.Provider value={contextValue}>
       {props.children}
     </StoreContext.Provider>
   );

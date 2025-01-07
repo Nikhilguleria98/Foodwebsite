@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header.jsx'
 // import Footer from './Footer.jsx'
 import { Outlet, useNavigation } from 'react-router-dom'
+import Footer from './Footer.jsx'
 // import Loading from './Loading.jsx'
 
 const Layout = () => {
@@ -12,13 +13,13 @@ const Layout = () => {
 const navigation = useNavigation()
 // console.log(navigation);
 
-if(navigation.state === "loading") return <Loading/>
+// if(navigation.state === "loading") return <Loading/>
 
   return (
     <>
       <Header/>
       <Outlet/>
-      {/* <Footer/> */}
+      <Footer/>
 
     </>
   )

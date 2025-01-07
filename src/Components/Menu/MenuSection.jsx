@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
+import { Link } from 'react-router-dom';
 
 const MenuSection = ({ category, items }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
@@ -10,7 +11,7 @@ const MenuSection = ({ category, items }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 gap-x-5 place-items-center mt-10">
         {items.map((item) => (
           <li key={item.id} className="w-full list-none flex justify-center">
-            <div className="w-full h-[380px] shadow-md rounded-lg cursor-pointer hover:scale-95 duration-200 max-w-[400px] ">
+            <div className="w-full h-[380px] shadow-md rounded-lg cursor-pointer hover:scale-95 duration-200 max-w-[400px]">
               <img
                 src={item.image}
                 alt={item.name}
@@ -25,10 +26,15 @@ const MenuSection = ({ category, items }) => {
               <div className="px-2 mt-4 flex justify-between items-center p-3">
                 <p className="text-orange-500 text-lg font-semibold">{item.price}</p>
                 <button
-                  onClick={() => addToCart(item.id, category)} // Pass category with the item ID
+                  onClick={() => addToCart(item.id, category)} 
                   className="bg-orange-500 text-white px-3 py-2 rounded-lg hover:bg-orange-600"
+                  disabled={item.id in cartItems} 
                 >
-                  Add to Cart
+                  {item.id in cartItems ? (
+                    <Link to="/cart" className="text-white">Go to Cart</Link> 
+                  ) : (
+                    "Add to Cart"
+                  )}
                 </button>
               </div>
             </div>
