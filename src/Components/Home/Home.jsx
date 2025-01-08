@@ -5,6 +5,7 @@ import Heroimg2 from '../../assets/images/Heroimg2.jpg';
 import Heroimg3 from '../../assets/images/Heroimg3.jpg';
 import Explore from './Explore';
 import TopDishes from './TopDishes';
+import Contact from '../ContactUs/ContactUs';
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -143,6 +144,8 @@ const Home = () => {
       </div>
       
       <TopDishes />
+      <Contact />
+
     </>
   );
 };
