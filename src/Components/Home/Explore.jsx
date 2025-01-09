@@ -1,26 +1,25 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import imageData from "./Explore.json";
 
-const Explore = () => {
-  const [isVisible, setIsVisible] = useState(false); 
-  const ref = useRef(null); 
+const Explore = ({ setSelectedFilter, selectedFilter }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
 
-  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true); 
+          setIsVisible(true);
         }
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
     if (ref.current) observer.observe(ref.current);
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current); 
+      if (ref.current) observer.unobserve(ref.current);
     };
   }, []);
 
@@ -29,24 +28,26 @@ const Explore = () => {
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
   };
 
+  const handleFilterClick = (filter) => {
+    setSelectedFilter(selectedFilter === filter ? null : filter); // Toggle filter
+  };
+
   return (
     <div ref={ref} className="flex justify-center mx-[4rem]">
-      <div className="w-full   border-b-4 border-gray-300 py-10">
-        
+      <div className="w-full border-b-4 border-gray-300 py-10">
         <motion.h1
           variants={textVariants}
           initial="hidden"
-          animate={isVisible ? "visible" : "hidden"} 
+          animate={isVisible ? "visible" : "hidden"}
           className="mt-10 text-2xl sm:text-3xl font-bold sm:px-6 text-center sm:text-left"
         >
           Explore our menu
         </motion.h1>
 
-        {/* Animated Paragraph */}
         <motion.p
           variants={textVariants}
           initial="hidden"
-          animate={isVisible ? "visible" : "hidden"} 
+          animate={isVisible ? "visible" : "hidden"}
           className="mt-5 font-medium text-sm sm:text-md sm:px-6 text-center sm:text-left"
         >
           Our menu features a diverse selection of mouth-watering dishes, with
@@ -54,12 +55,14 @@ const Explore = () => {
           dietary needs.
         </motion.p>
 
-        {/* Image List */}
         <ul className="flex gap-8 mt-10 overflow-x-auto scrollbar-none scroll-smooth">
           {imageData.map((currImage) => (
             <li
               key={currImage.id}
-              className="inline-block flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200"
+              className={`inline-block flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200 ${
+                selectedFilter === currImage.title ? "opacity-50" : ""
+              }`}
+              onClick={() => handleFilterClick(currImage.title)}
             >
               <div className="flex flex-col items-center">
                 <img

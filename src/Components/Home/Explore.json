@@ -7,7 +7,7 @@
     {
         "id":"2",
         "image":"./public/images/cake.jpg",
-        "title":"Cake"
+        "title":"Cakes"
         
     },
     {
@@ -31,7 +31,7 @@
     {
         "id":"6",
         "image":"./public/images/veg-rolls.jpg",
-        "title":"Veg Rolls"
+        "title":"Rolls"
         
     },
     {
@@ -67,13 +67,13 @@
     {
         "id":"12",
         "image":"./public/images/fried chicken.jpg",
-        "title":"Fried chicken"
+        "title":"Chicken"
         
     },
     {
         "id":"13",
         "image":"./public/images/burger.jpg",
-        "title":"Burger"
+        "title":"Burgers"
         
     }
 ]

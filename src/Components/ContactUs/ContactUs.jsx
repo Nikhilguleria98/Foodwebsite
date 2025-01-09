@@ -117,7 +117,7 @@ const Contact = () => {
    
           <motion.div className='w-full md:w-1/2 flex flex-col items-center ' variants={parentVariants}>
         <motion.div className='flex flex-col gap-3'>
-          <motion.h1 variants={childVariants} className='text-[8vh] md:text-[5vw] font-bold'>Let's Work <br /> <span  variants={childVariants} className='text-orange-400'>Together</span></motion.h1>
+          <motion.h1 variants={childVariants} className='text-[8vh] md:text-[5vw] font-bold'><span className='text-orange-400 '>Connect</span> <br /> <span className="text-[7vh] md:text-[4vw]"  variants={childVariants} >With Us</span></motion.h1>
           <motion.div className='flex flex-col justify-center '    variants={childVariants}>
             <motion.div className='flex items-center gap-2'>
               <SiGmail className='text-red-600'/>
