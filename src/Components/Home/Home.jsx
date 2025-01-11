@@ -6,6 +6,8 @@ import Heroimg3 from '../../assets/images/Heroimg3.jpg';
 import Explore from './Explore';
 import TopDishes from './TopDishes';
 import Contact from '../ContactUs/ContactUs';
+import { NavLink } from 'react-router-dom';
+import Testimonials from './Slider';
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,6 +54,42 @@ const Home = () => {
     visible: { opacity: 1, scale: 1 },
     exit: { opacity: 0, scale: 0.8 },
   };
+
+
+
+  const dataSection2 = {
+    heading: "Technologies To Build Top Notch Web Solutions",
+    description:
+      "We fellow an intense procedure, focusing on your business goal, To develop your web presence.",
+    images: [
+      {
+        id: 1,
+        image:
+          "https://images.unsplash.com/photo-1728588267038-9f36d7a74588?w=600&auto=format&fit=crop&q=60",
+      },
+      {
+        id: 2,
+        image:
+          "https://images.unsplash.com/photo-1729012837345-ac9ad264729a?w=600&auto=format&fit=crop&q=60",
+      },
+      {
+        id: 3,
+        image:
+          "https://images.unsplash.com/photo-1728985630341-075aa9277eda?w=600&auto=format&fit=crop&q=60",
+      },
+      {
+        id: 4,
+        image:
+          "https://images.unsplash.com/photo-1728814471162-2c4826612352?w=600&auto=format&fit=crop&q=60",
+      },
+      {
+        id: 5,
+        image:
+          "https://images.unsplash.com/photo-1728998887922-596106e38ac7?w=600&auto=format&fit=crop&q=60",
+      },
+    ],
+  };
+
 
   return (
     <>
@@ -102,7 +140,8 @@ const Home = () => {
 
           {/* Animated Buttons */}
           <div className="flex flex-col sm:flex-row sm:gap-4">
-            <motion.button
+          <NavLink to={`/menu`}>
+          <motion.button
               className="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-yellow-500 text-white text-md sm:text-xl font-semibold rounded-full hover:bg-yellow-600 transition-colors"
               variants={buttonVariants}
               initial="hidden"
@@ -112,6 +151,7 @@ const Home = () => {
             >
               Explore our menu
             </motion.button>
+          </NavLink>
             <motion.button
               className="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-yellow-500 text-white text-md sm:text-xl font-semibold rounded-full hover:bg-yellow-600 transition-colors"
               variants={buttonVariants}
@@ -144,6 +184,7 @@ const Home = () => {
       </div>
       
       <TopDishes />
+      <Testimonials data={dataSection2} images={dataSection2.images}/>
       <Contact />
 
     </>

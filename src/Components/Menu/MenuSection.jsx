@@ -6,7 +6,7 @@ const MenuSection = ({ category, items }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
 
   return (
-    <section className="mb-12 px-10 lg:px-32">
+    <section className="mb-12 px-10 lg:px-16 mt-10">
       <h2 className="text-3xl text-orange-500 font-semibold mb-6">{category}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 gap-x-5 place-items-center mt-10">
         {items.map((item) => (
@@ -24,7 +24,7 @@ const MenuSection = ({ category, items }) => {
                 <p className="text-sm text-slate-500">{item.description}</p>
               </div>
               <div className="px-2 mt-4 flex justify-between items-center p-3">
-                <p className="text-orange-500 text-lg font-semibold">{item.price}</p>
+                <p className="text-orange-500 text-lg font-semibold">₹{item.price}</p>
                 <button
                   onClick={() => addToCart(item.id, category)} 
                   className="bg-orange-500 text-white px-3 py-2 rounded-lg hover:bg-orange-600"
