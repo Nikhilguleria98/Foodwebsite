@@ -5,51 +5,51 @@
         "name": "Chocolate Truffle Cake",
         "description": "Rich and creamy chocolate cake.",
         "price": "500",
-        "image": "./images/Momos.jpg"
+        "image": "/images/Momos.jpg"
       },
       {
         "id": 2,
         "name": "Red Velvet Cake",
         "description": "Classic red velvet cake with cream cheese frosting.",
         "price": "650",
-        "image": "./images/Momos.jpg"
+        "image": "/images/Momos.jpg"
       },
       {
         "id": 3,
         "name": "Vanilla Sponge Cake",
         "description": "Soft and fluffy vanilla sponge cake.",
         "price": "400",
-        "image": "./images/Momos.jpg"
+        "image": "/images/Momos.jpg"
       },
       {
         "id": 4,
         "name": "Black Forest Cake",
         "description": "Layers of chocolate cake with cherries and cream.",
         "price": "450",
-        "image": "./images/Momos.jpg"
+        "image": "/images/Momos.jpg"
       },
       {
         "id": 5,
         "name": "Fruit Cake",
         "description": "Fresh fruit toppings on a moist cake base.",
         "price": "634",
-        "image": "./images/Momos.jpg"
+        "image": "/images/Momos.jpg"
       },
       {
         "id": 6,
         "name": "Carrot Cake",
         "description": "Spiced carrot cake with cream cheese frosting.",
         "price": "370",
-        "image": "https://via.placeholder.com/300"
+        "image": "https://via placeholder com/300"
       }
     ],
     "Burgers": [
       {
         "id": 7,
         "name": "Cheeseburger",
-        "description": "Juicy beef patty with melted cheese.",
+        "description": "Juicy beef patty with melted cheese ",
         "price": "300",
-        "image": "https://via.placeholder.com/300"
+        "image": "https://via placeholder.com/300"
       },
       {
         "id": 8,
