@@ -1,78 +1,78 @@
 [
     {
         "id":"1",
-        "image":"./public/images/Salad.jpg",
+        "image":"/images/Salad.jpg",
         "title":"Salad"
     },
     {
         "id":"2",
-        "image":"./public/images/cake.jpg",
+        "image":"/images/cake.jpg",
         "title":"Cakes"
         
     },
     {
         "id":"3",
-        "image":"./public/images/deserts.jpg",
+        "image":"/images/deserts.jpg",
         "title":"Deserts"
         
     },
     {
         "id":"4",
-        "image":"./public/images/noodles.jpg",
+        "image":"/images/noodles.jpg",
         "title":"Noodles"
         
     },
     {
         "id":"5",
-        "image":"./public/images/tea.jpg",
+        "image":"/images/tea.jpg",
         "title":"Tea"
         
     },
     {
         "id":"6",
-        "image":"./public/images/veg-rolls.jpg",
+        "image":"/images/veg-rolls.jpg",
         "title":"Rolls"
         
     },
     {
         "id":"7",
-        "image":"./public/images/Pizza.jpg",
+        "image":"/images/Pizza.jpg",
         "title":"Pizza"
         
     },
     {
         "id":"8",
-        "image":"./public/images/soup.jpg",
+        "image":"/images/soup.jpg",
         "title":"Soup"
         
     },
     {
         "id":"9",
-        "image":"./public/images/sandwich.jpg",
+        "image":"/images/sandwich.jpg",
         "title":"Sandwich"
         
     },
     {
         "id":"10",
-        "image":"./public/images/pasta.jpg",
+        "image":"/images/pasta.jpg",
         "title":"Pasta"
         
     },
     {
         "id":"11",
-        "image":"./public/images/Momos.jpg",
+        "image":"/images/Momos.jpg",
         "title":"Momos"
         
     },
     {
         "id":"12",
-        "image":"./public/images/fried chicken.jpg",
+        "image":"/images/fried chicken.jpg",
         "title":"Chicken"
         
     },
     {
         "id":"13",
-        "image":"./public/images/burger.jpg",
+        "image":"/images/burger.jpg",
         "title":"Burgers"
         
     }
