@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
+import { NavLink } from 'react-router-dom';
 
 const CartPage = () => {
   const { cartItems, removeFromCart, increaseQuantity } = useContext(StoreContext);
@@ -19,7 +20,7 @@ const CartPage = () => {
       {/* Cart Items Section */}
       <div className="space-y-6">
         {Object.keys(cartItems).length === 0 ? (
-          <p className="text-center text-lg text-gray-500">Your cart is empty!</p>
+          <p className="flex justify-center items-center h-full text-lg text-gray-500">Your cart is empty!</p>
         ) : (
           Object.keys(cartItems).map((itemID) => {
             const item = cartItems[itemID];
@@ -113,9 +114,11 @@ const CartPage = () => {
       {/* Proceed to Checkout */}
       {Object.keys(cartItems).length > 0 && (
         <div className="mt-6 flex justify-end">
-          <button className="bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600">
+         <NavLink to={'/Checkout'}>
+         <button className="bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600">
             Proceed to Checkout
           </button>
+         </NavLink>
         </div>
       )}
     </div>

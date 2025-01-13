@@ -16,12 +16,12 @@ const navigation = useNavigation()
 // if(navigation.state === "loading") return <Loading/>
 
   return (
-    <>
+    <div className='flex flex-col min-h-screen justify-between'>
       <Header/>
       <Outlet/>
       <Footer/>
 
-    </>
+    </div>
   )
 }
 

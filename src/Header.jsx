@@ -135,15 +135,15 @@ const Header = () => {
                   <NavLinkItem to="/about" toggleMenu={toggleMenu}>
                     About Us
                   </NavLinkItem>
-                  <NavLinkItem to="/Room" toggleMenu={toggleMenu}>
+                  <NavLinkItem to="/menu" toggleMenu={toggleMenu}>
                     Menu
                   </NavLinkItem>
                   {/* <NavLinkItem to="/Blog" toggleMenu={toggleMenu}>
                     Our Branches
                   </NavLinkItem> */}
-                  <NavLinkItem to="/contact" toggleMenu={toggleMenu}>
+                  {/* <NavLinkItem to="/contact" toggleMenu={toggleMenu}>
                     Contact
-                  </NavLinkItem>
+                  </NavLinkItem> */}
                 </div>
 
                 {/* Login and Sign In Buttons */}
