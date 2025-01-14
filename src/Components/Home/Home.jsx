@@ -58,34 +58,34 @@ const Home = () => {
 
 
   const dataSection2 = {
-    heading: "Technologies To Build Top Notch Web Solutions",
+    heading: "A Feast for the Senses",
     description:
-      "We fellow an intense procedure, focusing on your business goal, To develop your web presence.",
+      "Savor the artistry of fine dining through our curated selection of dishes, crafted to delight your palate.",
     images: [
       {
         id: 1,
         image:
-          "https://images.unsplash.com/photo-1728588267038-9f36d7a74588?w=600&auto=format&fit=crop&q=60",
+          "/images/cake2.webp",
       },
       {
         id: 2,
         image:
-          "https://images.unsplash.com/photo-1729012837345-ac9ad264729a?w=600&auto=format&fit=crop&q=60",
+        "/images/deserts1.webp",
       },
       {
         id: 3,
         image:
-          "https://images.unsplash.com/photo-1728985630341-075aa9277eda?w=600&auto=format&fit=crop&q=60",
+        "/images/pizza1.webp",
       },
       {
         id: 4,
         image:
-          "https://images.unsplash.com/photo-1728814471162-2c4826612352?w=600&auto=format&fit=crop&q=60",
+        "/images/sandwich3.webp",
       },
       {
         id: 5,
         image:
-          "https://images.unsplash.com/photo-1728998887922-596106e38ac7?w=600&auto=format&fit=crop&q=60",
+        "/images/salad1.webp",
       },
     ],
   };

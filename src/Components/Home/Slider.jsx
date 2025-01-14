@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const Testimonials = ({ data, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -74,25 +74,25 @@ const Testimonials = ({ data, images }) => {
             return {
               transform: "translateX(60%) scale(0.85)",
               zIndex: 2,
-              opacity: 0.8,
+              opacity: 1,
             };
           case 2:
             return {
               transform: "translateX(120%) scale(0.7)",
               zIndex: 1,
-              opacity: 0.6,
+              opacity: 1,
             };
           case totalCards - 1:
             return {
               transform: "translateX(-60%) scale(0.85)",
               zIndex: 2,
-              opacity: 0.8,
+              opacity: 1,
             };
           case totalCards - 2:
             return {
               transform: "translateX(-120%) scale(0.7)",
               zIndex: 1,
-              opacity: 0.6,
+              opacity: 1,
             };
           default:
             return { opacity: 0 }; // Hide other cards
@@ -104,10 +104,10 @@ const Testimonials = ({ data, images }) => {
   return (
     <div className="w-full flex flex-col items-center justify-center pt-16 pb-10">
       <div className="pb-8">
-        <h1 className="text-center font-bold text-xl md:text-[3vw] pb-[2vw]">
+        <h1 className="text-center font-bold text-[4vh] md:text-[3vw] pb-[2vw]">
           {data.heading}
         </h1>
-        <p className="text-center text-lg md:text-[2vw] px-4 md:px-[20vw]">
+        <p className="text-center text-[3vw] md:text-[1.4vw] px-4 md:px-[20vw]">
           {data.description}
         </p>
       </div>
@@ -130,9 +130,9 @@ const Testimonials = ({ data, images }) => {
           <div
             key={item.id}
             onClick={() => setActiveIndex(index)}
-            className={`w-2 h-2 md:w-4 bg-blue-400 md:h-4 rounded-full cursor-pointer transition-transform duration-200 ${
+            className={`w-2 h-2 md:w-4 bg-orange-400 md:h-4 rounded-full cursor-pointer transition-transform duration-200 ${
               activeIndex === index
-                ? "border-4 border-blue-500 transform scale-110"
+                ? "border-4 border-orange-500 transform scale-110"
                 : "opacity-60"
             }`}
           />

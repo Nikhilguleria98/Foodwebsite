@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import menuData from '../Components/Menu/Menu.json'; 
-import { div } from "framer-motion/client";
+
 
 export const StoreContext = createContext(null);
 

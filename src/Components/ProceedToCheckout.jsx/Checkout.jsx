@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Use useNavigate for React Rou
 import { StoreContext } from '../../context/StoreContext';
 
 const CheckoutPage = () => {
-  const { cartItems } = useContext(StoreContext);
+  const { cartItems,setCartItems } = useContext(StoreContext);
   const navigate = useNavigate(); // Use useNavigate hook for redirection
 
   const [formValues, setFormValues] = useState({
@@ -67,6 +67,7 @@ const CheckoutPage = () => {
   const handleSubmit = async () => {
     const errors = validateForm();
     setFormErrors(errors);
+    setCartItems({})
 
     if (Object.keys(errors).length === 0) {
       if (selectedPayment) {
@@ -89,15 +90,16 @@ const CheckoutPage = () => {
       } else {
         alert('Please select a payment method.');
       }
-    } else {
-      alert('Please fix the errors in the form.');
     }
+    //  else {
+    //   alert('Please fix the errors in the form.');
+    // }
   };
 
   return (
     <div className="container mx-auto px-4 py-12 mt-10">
       {/* Progress Bar */}
-      <div className="flex justify-between items-center mb-8">
+      <div className="hidden md:flex justify-between items-center mb-8 ">
         {['Cart', 'Delivery Information', 'Payment', 'Order Placed'].map((label, index) => (
           <div
             key={index}
@@ -126,9 +128,9 @@ const CheckoutPage = () => {
           <p className="text-lg text-gray-600">You will be redirected to the homepage shortly...</p>
         </div>
       ) : (
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6">
           {/* Left Column: Delivery Information */}
-          <div className="md:col-span-2 bg-white border rounded-lg shadow-md p-6">
+          <div className="col-span-2  bg-white border rounded-lg shadow-md p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Delivery Information</h2>
             <form>
               <div className="grid grid-cols-2 gap-4">
@@ -164,7 +166,7 @@ const CheckoutPage = () => {
           </div>
 
           {/* Right Column: Product Summary */}
-          <div className="bg-white border rounded-lg shadow-md p-6">
+          <div className="bg-white border rounded-lg shadow-md p-6 col-span-2 lg:col-span-1">
             <h2 className="text-xl font-bold text-gray-800 mb-4">Order Summary</h2>
             <div className="space-y-4">
               {Object.keys(cartItems).map((itemID) => {
@@ -176,7 +178,7 @@ const CheckoutPage = () => {
                       alt={item.name}
                       className="w-16 h-16 rounded-md object-cover"
                     />
-                    <div className="flex-1">
+                    <div className="flex-1 ">
                       <h3 className="text-gray-800 font-medium">{item.name}</h3>
                       <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
                     </div>
@@ -192,11 +194,11 @@ const CheckoutPage = () => {
             </div>
             <div className="flex justify-between items-center">
               <span className="text-gray-600">Delivery Fee:</span>
-              <span className="font-medium">₹50.00</span>
+              <span className="font-medium">₹40.00</span>
             </div>
             <div className="flex justify-between items-center text-lg font-bold mt-4">
               <span>Total:</span>
-              <span>₹{(calculateTotal() + 50).toFixed(2)}</span>
+              <span>₹{(calculateTotal() + 40).toFixed(2)}</span>
             </div>
           </div>
         </div>

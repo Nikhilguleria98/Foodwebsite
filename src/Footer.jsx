@@ -8,7 +8,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react
 const Footer = () => {
   return (
     <div className="bg-orange-600 overflow-hidden flex flex-col items-center justify-center">
-      <div className="bg-white w-[120vw] -mt-[30vw] h-[40vw] md:-mt-[15vw] md:h-[20vw] rounded-b-[100%]"></div>
+      <div className="	bg-[#FFF5EE] w-[120vw] -mt-[30vw] h-[40vw] md:-mt-[15vw] md:h-[20vw] rounded-b-[100%]"></div>
 
       <div className="w-full h-full pt-[10vw] md:pt-[4vw] md:py-[1vw] flex flex-col md:flex-row px-[10vw] gap-[5vw]">
         {/* Socail Links */}

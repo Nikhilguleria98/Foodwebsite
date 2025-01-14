@@ -6,7 +6,7 @@ import imageData from "./TopDishes.json";
 const TopDishes = () => {
   return (
     <div className="flex justify-center mt-10">
-      <div className="">
+      <div className="px-6">
         <h1 className="text-2xl sm:text-3xl font-bold sm:px-6 text-center sm:text-left">
           Top dishes near you
         </h1>
