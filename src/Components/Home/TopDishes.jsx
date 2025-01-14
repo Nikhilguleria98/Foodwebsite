@@ -6,15 +6,15 @@ import imageData from "./TopDishes.json";
 const TopDishes = () => {
   return (
     <div className="flex justify-center mt-10">
-      <div className="w-10/12">
+      <div className="">
         <h1 className="text-2xl sm:text-3xl font-bold sm:px-6 text-center sm:text-left">
           Top dishes near you
         </h1>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-y-12 gap-x-5  place-items-center mt-10">
           {imageData.map((currImage) => (
-            <li key={currImage.id} className="w-full ">
-              <div className="w-full h-[380px] shadow-md rounded-lg cursor-pointer hover:scale-95 duration-200 ">
+            <li key={currImage.id} className="">
+              <div className=" max-w-[350px] h-[380px] shadow-md rounded-lg cursor-pointer hover:scale-95 duration-200 ">
                 <img
                   src={currImage.image}
                   alt={currImage.title}
