@@ -100,7 +100,7 @@ const CheckoutPage = () => {
     <div className="container mx-auto px-4 py-12 mt-10">
       {/* Progress Bar */}
       <div className="hidden md:flex justify-between items-center mb-8 ">
-        {['Cart', 'Delivery Information', 'Payment', 'Order Placed'].map((label, index) => (
+        {['Cart', 'Delivery Information', 'Order Placed'].map((label, index) => (
           <div
             key={index}
             className={`flex-1 flex items-center ${
