@@ -7,7 +7,7 @@ const MenuSection = ({ category, items }) => {
 
   return (
     <section className="mb-12 px-5 lg:px-16 mt-10">
-      <h2 className="text-3xl text-orange-500 font-semibold mb-6">{category}</h2>
+      {/* <h2 className="text-3xl text-orange-500 font-semibold mb-6">{category}</h2> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-12 gap-x-5 place-items-center mt-10">
         {items.map((item) => (
           <li key={item.id} className="w-full list-none flex justify-center">
