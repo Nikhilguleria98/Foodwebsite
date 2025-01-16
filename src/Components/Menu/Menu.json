@@ -1,484 +1,172 @@
 {
-    "Cakes": [
-      {
-        "id": 1,
-        "name": "Chocolate Truffle Cake",
-        "description": "Rich and creamy chocolate cake.",
-        "price": "500",
-        "image": "/images/cake1.webp"
-      },
-      {
-        "id": 2,
-        "name": "Red Velvet Cake",
-        "description": "Classic red velvet cake with cream cheese frosting.",
-        "price": "650",
-        "image": "/images/cake2.webp"
-      },
-      {
-        "id": 3,
-        "name": "Vanilla Sponge Cake",
-        "description": "Soft and fluffy vanilla sponge cake.",
-        "price": "400",
-        "image": "/images/cake3.webp"
-      },
-      {
-        "id": 4,
-        "name": "Black Forest Cake",
-        "description": "Layers of chocolate cake with cherries and cream.",
-        "price": "450",
-        "image": "/images/cake4.webp"
-      },
-      {
-        "id": 5,
-        "name": "Fruit Cake",
-        "description": "Fresh fruit toppings on a moist cake base.",
-        "price": "634",
-        "image": "/images/cake5.webp"
-      },
-      {
-        "id": 6,
-        "name": "Carrot Cake",
-        "description": "Spiced carrot cake with cream cheese frosting.",
-        "price": "370",
-        "image": "/images/cake6.webp"
-      }
-    ],
-    "Burgers": [
-      {
-        "id": 7,
-        "name": "Cheeseburger",
-        "description": "Juicy beef patty with melted cheese ",
-        "price": "300",
-        "image": "/images/burger1.webp"
-      },
-      {
-        "id": 8,
-        "name": "Chicken Burger",
-        "description": "Grilled chicken patty with fresh lettuce.",
-        "price": "500",
-        "image": "/images/burger2.webp"
-      },
-      {
-        "id": 9,
-        "name": "Veggie Burger",
-        "description": "Crispy veggie patty with fresh toppings.",
-        "price": "250",
-        "image": "/images/burger3.webp"
-      },
-      {
-        "id": 10,
-        "name": "Bacon Burger",
-        "description": "Beef patty topped with crispy bacon.",
-        "price": "430",
-        "image": "/images/burger4.webp"
-      },
-      {
-        "id": 11,
-        "name": "Double Cheeseburger",
-        "description": "Two beef patties with double cheese.",
-        "price": "600",
-        "image": "/images/burger5.webp"
-      },
-      {
-        "id": 12,
-        "name": "Spicy Chicken Burger",
-        "description": "Zesty chicken patty with spicy sauce.",
-        "price": "650",
-        "image": "/images/burger6.webp"
-      }
-    ],
-    "Momos": [
-      {
-        "id": 13,
-        "name": "Steamed Chicken Momos",
-        "description": "Delicious steamed dumplings filled with chicken.",
-        "price": "200",
-        "image": "/images/momos1.webp"
-      },
-      {
-        "id": 14,
-        "name": "Veg Momos",
-        "description": "Steamed momos with a vegetable filling.",
-        "price": "250",
-        "image": "/images/momos2.webp"
-      },
-      {
-        "id": 15,
-        "name": "Fried Momos",
-        "description": "Crispy fried dumplings filled with meat or veggies.",
-        "price": "400",
-        "image": "/images/momos3.webp"
-      },
-      {
-        "id": 16,
-        "name": "Paneer Momos",
-        "description": "Dumplings stuffed with seasoned paneer.",
-        "price": "560",
-        "image": "/images/momos4.webp"
-      },
-      {
-        "id": 17,
-        "name": "Spicy Momos",
-        "description": "Hot and spicy dumplings with chili sauce.",
-        "price": "430",
-        "image": "/images/momos5.webp"
-      },
-      {
-        "id": 18,
-        "name": "Tandoori Momos",
-        "description": "Grilled momos with a smoky tandoori flavor.",
-        "price": "300",
-        "image": "/images/momos6.webp"
-      }
-    ],
-    "Rolls": [
-      {
-        "id": 19,
-        "name": "Chicken Roll",
-        "description": "Stuffed with juicy chicken and fresh veggies.",
-        "price": "250",
-        "image": "/images/rolls1.webp"
-      },
-      {
-        "id": 20,
-        "name": "Paneer Roll",
-        "description": "Soft roll with spiced paneer filling.",
-        "price": "130",
-        "image": "/images/rolls2.webp"
-      },
-      {
-        "id": 21,
-        "name": "Egg Roll",
-        "description": "Fluffy egg filling in a crispy roll.",
-        "price": "190",
-        "image": "/images/rolls3.webp"
-      },
-      {
-        "id": 22,
-        "name": "Veg Roll",
-        "description": "Healthy veggie filling wrapped in a roll.",
-        "price": "130",
-        "image": "/images/rolls4.webp"
-      },
-      {
-        "id": 23,
-        "name": "Cheese Roll",
-        "description": "Cheesy filling in a toasted roll.",
-        "price": "200",
-        "image": "/images/rolls5.webp"
-      },
-      {
-        "id": 24,
-        "name": "Spicy Chicken Roll",
-        "description": "Roll with spiced chicken and tangy sauce.",
-        "price": "250",
-        "image": "/images/rolls6.webp"
-      }
-    ],
-    "Chicken": [
-      {
-        "id": 25,
-        "name": "Grilled Chicken",
-        "description": "Tender and juicy grilled chicken.",
-        "price": "500",
-        "image": "/images/chicken1.webp"
-      },
-      {
-        "id": 26,
-        "name": "Chicken Wings",
-        "description": "Spicy and crispy chicken wings.",
-        "price": "450",
-        "image": "/images/chicken2.webp"
-      },
-      {
-        "id": 27,
-        "name": "Butter Chicken",
-        "description": "Creamy butter chicken served with naan.",
-        "price": "670",
-        "image": "/images/chicken3.webp"
-      },
-      {
-        "id": 28,
-        "name": "Chicken Curry",
-        "description": "Rich and flavorful chicken curry.",
-        "price": "500",
-        "image": "/images/chicken4.webp"
-      },
-      {
-        "id": 29,
-        "name": "Chicken Tikka",
-        "description": "Spiced and grilled chicken skewers.",
-        "price": "800",
-        "image": "/images/chicken5.webp"
-      },
-      {
-        "id": 30,
-        "name": "Popcorn Chicken",
-        "description": "Bite-sized crispy chicken pieces.",
-        "price": "530",
-        "image": "/images/chicken6.webp"
-      }
-    ],
-    "Tea": [
-      {
-        "id": 31,
-        "name": "Masala Chai",
-        "description": "Traditional spiced Indian tea.",
-        "price": "200",
-        "image": "/images/tea1.webp"
-      },
-      {
-        "id": 32,
-        "name": "Green Tea",
-        "description": "Healthy green tea with a refreshing flavor.",
-        "price": "250",
-        "image": "/images/tea2.webp"
-      },
-      {
-        "id": 33,
-        "name": "Black Tea",
-        "description": "Bold and strong classic black tea.",
-        "price": "210",
-        "image": "/images/tea3.webp"
-      },
-      {
-        "id": 34,
-        "name": "Ginger Tea",
-        "description": "Tea infused with fresh ginger.",
-        "price": "100",
-        "image": "/images/tea4.webp"
-      },
-      {
-        "id": 35,
-        "name": "Herbal Tea",
-        "description": "Relaxing tea with herbal infusions.",
-        "price": "143",
-        "image": "/images/tea5.webp"
-      }
-    ],
-    "Soup": [
-      {
-        "id": 36,
-        "name": "Tomato Soup",
-        "description": "Rich and creamy tomato soup.",
-        "price": "100",
-        "image": "/images/soup1.webp"
-      },
-      {
-        "id": 37,
-        "name": "Hot and Sour Soup",
-        "description": "Spicy and tangy Asian soup.",
-        "price": "150",
-        "image": "/images/soup2.webp"
-      },
-      {
-        "id": 38,
-        "name": "Chicken Soup",
-        "description": "Comforting chicken broth with vegetables.",
-        "price": "200",
-        "image": "/images/soup3.webp"
-      },
-      {
-        "id": 39,
-        "name": "Sweet Corn Soup",
-        "description": "Sweet and creamy corn soup.",
-        "price": "156",
-        "image": "/images/soup4.webp"
-      },
-      {
-        "id": 40,
-        "name": "Mushroom Soup",
-        "description": "Delicious soup with mushrooms and cream.",
-        "price": "180",
-        "image": "/images/soup5.webp"
-      }
-    ],
-    "Noodles": [
-      {
-        "id": 41,
-        "name": "Veg Hakka Noodles",
-        "description": "Classic stir-fried noodles with vegetables.",
-        "price": "300",
-        "image": "/images/noodles1.webp"
-      },
-      {
-        "id": 42,
-        "name": "Chicken Chow Mein",
-        "description": "Savory noodles with chicken and veggies.",
-        "price": "500",
-        "image": "/images/noodles2.webp"
-      },
-      {
-        "id": 43,
-        "name": "Schezwan Noodles",
-        "description": "Spicy noodles with Schezwan sauce.",
-        "price": "340",
-        "image": "/images/noodles3.webp"
-      },
-      {
-        "id": 44,
-        "name": "Pad Thai",
-        "description": "Sweet and tangy Thai-style noodles.",
-        "price": "560",
-        "image": "/images/noodles4.webp"
-      },
-      {
-        "id": 45,
-        "name": "Egg Noodles",
-        "description": "Delicious egg-based noodles.",
-        "price": "453",
-        "image": "/images/noodles5.webp"
-      }
-    ],
-    "Pizza": [
-      {
-        "id": 46,
-        "name": "Margherita Pizza",
-        "description": "Classic pizza with fresh tomatoes and mozzarella.",
-        "price": "800",
-        "image": "/images/pizza1.webp"
-      },
-      {
-        "id": 47,
-        "name": "Pepperoni Pizza",
-        "description": "Topped with spicy pepperoni and cheese.",
-        "price": "780",
-        "image": "/images/pizza2.webp"
-      },
-      {
-        "id": 48,
-        "name": "BBQ Chicken Pizza",
-        "description": "Pizza topped with barbecue chicken and onions.",
-        "price": "890",
-        "image": "/images/pizza3.webp"
-      },
-      {
-        "id": 49,
-        "name": "Veggie Supreme Pizza",
-        "description": "Loaded with fresh veggies and cheese.",
-        "price": "1100",
-        "image": "/images/pizza4.webp"
-      },
-      {
-        "id": 50,
-        "name": "Four Cheese Pizza",
-        "description": "Combination of four rich cheeses.",
-        "price": "1308",
-        "image": "/images/pizza5.webp"
-      }
-    ],
-    "Sandwich": [
-      {
-        "id": 51,
-        "name": "Grilled Cheese Sandwich",
-        "description": "Classic sandwich with melted cheese.",
-        "price": "300",
-        "image": "/images/sandwich1.webp"
-      },
-      {
-        "id": 52,
-        "name": "Club Sandwich",
-        "description": "Triple-layered sandwich with chicken and veggies.",
-        "price": "280",
-        "image": "/images/sandwich2.webp"
-      },
-      {
-        "id": 53,
-        "name": "Veg Sandwich",
-        "description": "Stuffed with fresh vegetables and cheese.",
-        "price": "300",
-        "image": "/images/sandwich3.webp"
-      },
-      {
-        "id": 54,
-        "name": "Chicken Sandwich",
-        "description": "Delicious sandwich with grilled chicken.",
-        "price": "500",
-        "image": "/images/sandwich4.webp"
-      },
-      {
-        "id": 55,
-        "name": "Tuna Sandwich",
-        "description": "Sandwich filled with tuna and mayo.",
-        "price": "453",
-        "image": "/images/sandwich5.webp"
-      }
-    ],
-   "Deserts": [
-  {
-    "id": 56,
-    "name": "Chocolate Lava Cake",
-    "description": "Warm, gooey cake with molten chocolate.",
-    "price": "700",
-    "image": "/images/deserts1.webp"
-  },
-  {
-    "id": 57,
-    "name": "Tiramisu",
-    "description": "Creamy coffee-flavored Italian dessert.",
-    "price": "876",
-    "image": "/images/deserts2.webp"
-  },
-  {
-    "id": 58,
-    "name": "Cheesecake",
-    "description": "Rich, creamy cheesecake with a buttery crust.",
-    "price": "500",
-    "image": "/images/deserts3.webp"
-  },
-  {
-    "id": 59,
-    "name": "Apple Pie",
-    "description": "Classic pie with spiced apple filling.",
-    "price": "670",
-    "image": "/images/deserts4.webp"
-  },
-  {
-    "id": 60,
-    "name": "Lemon Sorbet",
-    "description": "Refreshing lemon-flavored frozen dessert.",
-    "price": "876",
-    "image": "/images/deserts5.webp"
-  }
-],
-
-    "Salad": [
-  {
-    "id": 61,
-    "name": "Caesar Salad",
-    "description": "Crisp romaine with creamy dressing and croutons.",
-    "price": "300",
-    "image": "/images/salad1.webp"
-  },
-  {
-    "id": 62,
-    "name": "Greek Salad",
-    "description": "Fresh veggies, feta, and tangy olives.",
-    "price": "356",
-    "image": "/images/salad2.webp"
-  },
-  {
-    "id": 63,
-    "name": "Cobb Salad",
-    "description": "Chicken, avocado, bacon, and blue cheese.",
-    "price": "200",
-    "image": "/images/salad3.webp"
-  },
-  {
-    "id": 64,
-    "name": "Caprese Salad",
-    "description": "Tomatoes, mozzarella, and fresh basil.",
-    "price": "230",
-    "image": "/images/salad4.webp"
-  },
-  {
-    "id": 65,
-    "name": "Waldorf Salad",
-    "description": "Apples, walnuts, and creamy mayo dressing.",
-    "price": "170",
-    "image": "/images/salad5.webp"
-  }
-]
-
-  }
-  
+  "All category": [
+    { "name": "Margherita Pizza", "description": "Classic pizza with fresh basil", "price": "$9" },
+    { "name": "Pepperoni Pizza", "description": "Pepperoni and cheese pizza", "price": "$11" },
+    { "name": "Vegetarian Pizza", "description": "Topped with veggies", "price": "$10" },
+    { "name": "BBQ Chicken Pizza", "description": "Chicken with BBQ sauce", "price": "$12" },
+    { "name": "Hawaiian Pizza", "description": "Pineapple and ham pizza", "price": "$10" },
+    { "name": "Cheese Pizza", "description": "Classic cheese pizza", "price": "$8" },
+    { "name": "Chocolate Cake", "description": "Rich chocolate flavor", "price": "$5" },
+    { "name": "Vanilla Cake", "description": "Soft and fluffy vanilla cake", "price": "$5" },
+    { "name": "Red Velvet Cake", "description": "Red velvet with cream cheese frosting", "price": "$6" },
+    { "name": "Carrot Cake", "description": "Moist carrot cake with nuts", "price": "$5" },
+    { "name": "Cheesecake", "description": "Classic cheesecake with berry topping", "price": "$7" },
+    { "name": "Lemon Cake", "description": "Tangy lemon flavor", "price": "$5" },
+    { "name": "Steamed Momos", "description": "Filled with vegetables", "price": "$7" },
+    { "name": "Chicken Momos", "description": "Filled with spiced chicken", "price": "$8" },
+    { "name": "Prawn Momos", "description": "Filled with shrimp", "price": "$9" },
+    { "name": "Buff Momos", "description": "Filled with buffalo meat", "price": "$8" },
+    { "name": "Fried Momos", "description": "Crispy fried momos", "price": "$7" },
+    { "name": "Cheese Momos", "description": "Filled with cheese", "price": "$7" },
+    { "name": "Grilled Cheese Sandwich", "description": "Cheddar and Swiss cheese", "price": "$6" },
+    { "name": "Club Sandwich", "description": "Ham, turkey, and cheese", "price": "$7" },
+    { "name": "Vegetarian Sandwich", "description": "Lettuce, tomato, cucumber", "price": "$5" },
+    { "name": "Chicken Sandwich", "description": "Grilled chicken breast with mayo", "price": "$6" },
+    { "name": "BLT Sandwich", "description": "Bacon, lettuce, and tomato", "price": "$6" },
+    { "name": "Pastrami Sandwich", "description": "Pastrami and mustard", "price": "$7" },
+    { "name": "Spaghetti Carbonara", "description": "Pasta with creamy carbonara sauce", "price": "$12" },
+    { "name": "Penne Arrabbiata", "description": "Penne pasta with spicy tomato sauce", "price": "$11" },
+    { "name": "Lasagna", "description": "Layers of pasta, cheese, and meat", "price": "$14" },
+    { "name": "Fettuccine Alfredo", "description": "Fettuccine pasta with creamy Alfredo sauce", "price": "$13" },
+    { "name": "Pasta Primavera", "description": "Pasta with mixed vegetables", "price": "$12" },
+    { "name": "Penne with Pesto", "description": "Pasta with basil pesto", "price": "$11" },
+    { "name": "Cheeseburger", "description": "Classic beef burger with cheese", "price": "$8" },
+    { "name": "Chicken Burger", "description": "Grilled chicken sandwich with mayo", "price": "$7" },
+    { "name": "Veggie Burger", "description": "Vegetable patty with lettuce and tomato", "price": "$6" },
+    { "name": "BBQ Burger", "description": "Burger with BBQ sauce and crispy onions", "price": "$9" },
+    { "name": "Bacon Burger", "description": "Burger with crispy bacon and cheese", "price": "$9" },
+    { "name": "Mushroom Swiss Burger", "description": "Beef patty with mushroom and Swiss cheese", "price": "$10" },
+    { "name": "Caesar Salad", "description": "Romaine lettuce with Caesar dressing", "price": "$6" },
+    { "name": "Greek Salad", "description": "Cucumbers, olives, feta, and dressing", "price": "$7" },
+    { "name": "Garden Salad", "description": "Mixed greens with vinaigrette", "price": "$5" },
+    { "name": "Cobb Salad", "description": "Chicken, bacon, eggs, avocado", "price": "$8" },
+    { "name": "Chicken Salad", "description": "Grilled chicken with mixed greens", "price": "$7" },
+    { "name": "Fruit Salad", "description": "Seasonal fruits with honey dressing", "price": "$5" },
+    { "name": "Stir-fried Noodles", "description": "Vegetables and soy sauce", "price": "$8" },
+    { "name": "Chicken Noodles", "description": "Chicken with stir-fried noodles", "price": "$9" },
+    { "name": "Prawn Noodles", "description": "Noodles with prawns in spicy sauce", "price": "$10" },
+    { "name": "Vegetarian Noodles", "description": "Mixed vegetables with noodles", "price": "$8" },
+    { "name": "Beef Noodles", "description": "Stir-fried beef with noodles", "price": "$9" },
+    { "name": "Egg Noodles", "description": "Noodles with scrambled eggs", "price": "$7" },
+    { "name": "Chicken Roll", "description": "Chicken wrapped in paratha", "price": "$8" },
+    { "name": "Mutton Roll", "description": "Spiced mutton wrapped in paratha", "price": "$9" },
+    { "name": "Vegetable Roll", "description": "Mixed vegetables wrapped in roti", "price": "$7" },
+    { "name": "Paneer Roll", "description": "Paneer with spices wrapped in roti", "price": "$8" },
+    { "name": "Egg Roll", "description": "Egg wrapped in paratha with veggies", "price": "$7" },
+    { "name": "Fish Roll", "description": "Fried fish wrapped in roti", "price": "$9" },
+    { "name": "Green Tea", "description": "A healthy, calming tea", "price": "$2" },
+    { "name": "Black Tea", "description": "Classic black tea", "price": "$2" },
+    { "name": "Masala Tea", "description": "Spiced tea with milk", "price": "$3" },
+    { "name": "Lemon Tea", "description": "Tea with a hint of lemon", "price": "$2" },
+    { "name": "Iced Tea", "description": "Chilled tea served with ice", "price": "$3" },
+    { "name": "Chai Tea", "description": "Traditional Indian tea with milk and spices", "price": "$3" },
+    { "name": "Tomato Soup", "description": "Classic tomato soup with cream", "price": "$5" },
+    { "name": "Minestrone Soup", "description": "Italian vegetable soup", "price": "$6" },
+    { "name": "Chicken Soup", "description": "Chicken soup with vegetables", "price": "$7" },
+    { "name": "Lentil Soup", "description": "Spiced lentil soup", "price": "$5" },
+    { "name": "Vegetable Soup", "description": "Hearty vegetable soup", "price": "$5" },
+    { "name": "Corn Soup", "description": "Sweet corn soup with cream", "price": "$6" },
+    { "name": "Ice Cream", "description": "Vanilla, chocolate, or strawberry", "price": "$3" },
+    { "name": "Brownie", "description": "Chocolate brownie with nuts", "price": "$4" },
+    { "name": "Apple Pie", "description": "Warm apple pie with cinnamon", "price": "$4" },
+    { "name": "Cheesecake", "description": "Classic cheesecake with berry topping", "price": "$5" },
+    { "name": "Pudding", "description": "Rich chocolate pudding", "price": "$4" },
+    { "name": "Tiramisu", "description": "Classic Italian dessert", "price": "$5" }
+  ],
+  "Pizza": [
+    { "name": "Margherita Pizza", "description": "Classic pizza with fresh basil", "price": "$9" },
+    { "name": "Pepperoni Pizza", "description": "Pepperoni and cheese pizza", "price": "$11" },
+    { "name": "Vegetarian Pizza", "description": "Topped with veggies", "price": "$10" },
+    { "name": "BBQ Chicken Pizza", "description": "Chicken with BBQ sauce", "price": "$12" },
+    { "name": "Hawaiian Pizza", "description": "Pineapple and ham pizza", "price": "$10" },
+    { "name": "Cheese Pizza", "description": "Classic cheese pizza", "price": "$8" }
+  ],
+  "Cake": [
+    { "name": "Chocolate Cake", "description": "Rich chocolate flavor", "price": "$5" },
+    { "name": "Vanilla Cake", "description": "Soft and fluffy vanilla cake", "price": "$5" },
+    { "name": "Red Velvet Cake", "description": "Red velvet with cream cheese frosting", "price": "$6" },
+    { "name": "Carrot Cake", "description": "Moist carrot cake with nuts", "price": "$5" },
+    { "name": "Cheesecake", "description": "Classic cheesecake with berry topping", "price": "$7" },
+    { "name": "Lemon Cake", "description": "Tangy lemon flavor", "price": "$5" }
+  ],
+  "Momos": [
+    { "name": "Steamed Momos", "description": "Filled with vegetables", "price": "$7" },
+    { "name": "Chicken Momos", "description": "Filled with spiced chicken", "price": "$8" },
+    { "name": "Prawn Momos", "description": "Filled with shrimp", "price": "$9" },
+    { "name": "Buff Momos", "description": "Filled with buffalo meat", "price": "$8" },
+    { "name": "Fried Momos", "description": "Crispy fried momos", "price": "$7" },
+    { "name": "Cheese Momos", "description": "Filled with cheese", "price": "$7" }
+  ],
+  "Sandwich": [
+    { "name": "Grilled Cheese Sandwich", "description": "Cheddar and Swiss cheese", "price": "$6" },
+    { "name": "Club Sandwich", "description": "Ham, turkey, and cheese", "price": "$7" },
+    { "name": "Vegetarian Sandwich", "description": "Lettuce, tomato, cucumber", "price": "$5" },
+    { "name": "Chicken Sandwich", "description": "Grilled chicken breast with mayo", "price": "$6" },
+    { "name": "BLT Sandwich", "description": "Bacon, lettuce, and tomato", "price": "$6" },
+    { "name": "Pastrami Sandwich", "description": "Pastrami and mustard", "price": "$7" }
+  ],
+  "Pasta": [
+    { "name": "Spaghetti Carbonara", "description": "Pasta with creamy carbonara sauce", "price": "$12" },
+    { "name": "Penne Arrabbiata", "description": "Penne pasta with spicy tomato sauce", "price": "$11" },
+    { "name": "Lasagna", "description": "Layers of pasta, cheese, and meat", "price": "$14" },
+    { "name": "Fettuccine Alfredo", "description": "Fettuccine pasta with creamy Alfredo sauce", "price": "$13" },
+    { "name": "Pasta Primavera", "description": "Pasta with mixed vegetables", "price": "$12" },
+    { "name": "Penne with Pesto", "description": "Pasta with basil pesto", "price": "$11" }
+  ],
+  "Burger": [
+    { "name": "Cheeseburger", "description": "Classic beef burger with cheese", "price": "$8" },
+    { "name": "Chicken Burger", "description": "Grilled chicken sandwich with mayo", "price": "$7" },
+    { "name": "Veggie Burger", "description": "Vegetable patty with lettuce and tomato", "price": "$6" },
+    { "name": "BBQ Burger", "description": "Burger with BBQ sauce and crispy onions", "price": "$9" },
+    { "name": "Bacon Burger", "description": "Burger with crispy bacon and cheese", "price": "$9" },
+    { "name": "Mushroom Swiss Burger", "description": "Beef patty with mushroom and Swiss cheese", "price": "$10" }
+  ],
+  "Salad": [
+    { "name": "Caesar Salad", "description": "Romaine lettuce with Caesar dressing", "price": "$6" },
+    { "name": "Greek Salad", "description": "Cucumbers, olives, feta, and dressing", "price": "$7" },
+    { "name": "Garden Salad", "description": "Mixed greens with vinaigrette", "price": "$5" },
+    { "name": "Cobb Salad", "description": "Chicken, bacon, eggs, avocado", "price": "$8" },
+    { "name": "Chicken Salad", "description": "Grilled chicken with mixed greens", "price": "$7" },
+    { "name": "Fruit Salad", "description": "Seasonal fruits with honey dressing", "price": "$5" }
+  ],
+  "Noodles": [
+    { "name": "Stir-fried Noodles", "description": "Vegetables and soy sauce", "price": "$8" },
+    { "name": "Chicken Noodles", "description": "Chicken with stir-fried noodles", "price": "$9" },
+    { "name": "Prawn Noodles", "description": "Noodles with prawns in spicy sauce", "price": "$10" },
+    { "name": "Vegetarian Noodles", "description": "Mixed vegetables with noodles", "price": "$8" },
+    { "name": "Beef Noodles", "description": "Stir-fried beef with noodles", "price": "$9" },
+    { "name": "Egg Noodles", "description": "Noodles with scrambled eggs", "price": "$7" }
+  ],
+  "Rolls": [
+    { "name": "Chicken Roll", "description": "Chicken wrapped in paratha", "price": "$8" },
+    { "name": "Mutton Roll", "description": "Spiced mutton wrapped in paratha", "price": "$9" },
+    { "name": "Vegetable Roll", "description": "Mixed vegetables wrapped in roti", "price": "$7" },
+    { "name": "Paneer Roll", "description": "Paneer with spices wrapped in roti", "price": "$8" },
+    { "name": "Egg Roll", "description": "Egg wrapped in paratha with veggies", "price": "$7" },
+    { "name": "Fish Roll", "description": "Fried fish wrapped in roti", "price": "$9" }
+  ],
+  "Tea": [
+    { "name": "Green Tea", "description": "A healthy, calming tea", "price": "$2" },
+    { "name": "Black Tea", "description": "Classic black tea", "price": "$2" },
+    { "name": "Masala Tea", "description": "Spiced tea with milk", "price": "$3" },
+    { "name": "Lemon Tea", "description": "Tea with a hint of lemon", "price": "$2" },
+    { "name": "Iced Tea", "description": "Chilled tea served with ice", "price": "$3" },
+    { "name": "Chai Tea", "description": "Traditional Indian tea with milk and spices", "price": "$3" }
+  ],
+  "Soup": [
+    { "name": "Tomato Soup", "description": "Classic tomato soup with cream", "price": "$5" },
+    { "name": "Minestrone Soup", "description": "Italian vegetable soup", "price": "$6" },
+    { "name": "Chicken Soup", "description": "Chicken soup with vegetables", "price": "$7" },
+    { "name": "Lentil Soup", "description": "Spiced lentil soup", "price": "$5" },
+    { "name": "Vegetable Soup", "description": "Hearty vegetable soup", "price": "$5" },
+    { "name": "Corn Soup", "description": "Sweet corn soup with cream", "price": "$6" }
+  ],
+  "Deserts": [
+    { "name": "Ice Cream", "description": "Vanilla, chocolate, or strawberry", "price": "$3" },
+    { "name": "Brownie", "description": "Chocolate brownie with nuts", "price": "$4" },
+    { "name": "Apple Pie", "description": "Warm apple pie with cinnamon", "price": "$4" },
+    { "name": "Cheesecake", "description": "Classic cheesecake with berry topping", "price": "$5" },
+    { "name": "Pudding", "description": "Rich chocolate pudding", "price": "$4" },
+    { "name": "Tiramisu", "description": "Classic Italian dessert", "price": "$5" }
+  ]
+}

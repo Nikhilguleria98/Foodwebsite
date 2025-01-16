@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import imageData from "./Explore.json";
 
 const Explore = ({ setSelectedFilter, selectedFilter }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,9 +27,26 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
   };
 
-  const handleFilterClick = (filter) => {
-    setSelectedFilter(selectedFilter === filter ? null : filter); // Toggle filter
+  const handleFilterClick = (category) => {
+    setSelectedFilter(selectedFilter === category ? null : category); // Toggle filter
   };
+
+  const items = [
+    "All category",
+    "Pizza",
+    "Cake",
+    "Momos",
+    "Sandwich",
+    "Pasta",
+    "Burger",
+    "Salad",
+    "Chicken",
+    "Noodles",
+    "Rolls",
+    "Tea",
+    "Soup",
+    "Deserts",
+  ];
 
   return (
     <div ref={ref} className="flex justify-center mx-[4rem]">
@@ -51,31 +67,29 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
           className="mt-5 font-medium text-sm sm:text-md sm:px-6 text-center sm:text-left"
         >
           Our menu features a diverse selection of mouth-watering dishes, with
-          clear descriptions and pricing, <br /> catering to all tastes and
-          dietary needs.
+          clear descriptions and pricing, catering to all tastes and dietary
+          needs.
         </motion.p>
 
-        <ul className="flex gap-8 mt-10 overflow-x-auto scrollbar-none scroll-smooth">
-          {imageData.map((currImage) => (
-            <li
-              key={currImage.id}
-              className={`inline-block flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200 ${
-                selectedFilter === currImage.title ? "opacity-50" : ""
-              }`}
-              onClick={() => handleFilterClick(currImage.title)}
-            >
-              <div className="flex flex-col items-center">
-                <img
-                  src={currImage.image}
-                  alt={currImage.title}
-                  className="h-28 w-28 rounded-full"
-                />
-                <p className="mt-3 text-xl font-semibold text-slate-600">
-                  {currImage.title}
+        {/* Filter Bar */}
+        <ul className="flex items-center gap-8 mt-10 overflow-x-auto scrollbar-none scroll-smooth">
+          {items.length > 0 ? (
+            items.map((item) => (
+              <li
+                key={item}
+                className={`flex items-center justify-center flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200   ${
+                  selectedFilter === item ? "bg-orange-600 text-white rounded-lg" : ""
+                }`}
+                onClick={() => handleFilterClick(item)}
+              >
+                <p className="p-3 text-xl font-semibold">
+                  {item}
                 </p>
-              </div>
-            </li>
-          ))}
+              </li>
+            ))
+          ) : (
+            <li>No categories available</li>
+          )}
         </ul>
       </div>
     </div>
