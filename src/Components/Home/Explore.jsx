@@ -22,6 +22,13 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
     };
   }, []);
 
+  // Set "All category" as the default active filter
+  useEffect(() => {
+    if (selectedFilter === null) {
+      setSelectedFilter("All category");
+    }
+  }, [setSelectedFilter, selectedFilter]);
+
   const textVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
@@ -37,7 +44,6 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
     "Cake",
     "Momos",
     "Sandwich",
-    "Pasta",
     "Burger",
     "Salad",
     "Chicken",
@@ -77,14 +83,14 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
             items.map((item) => (
               <li
                 key={item}
-                className={`flex items-center justify-center flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200   ${
-                  selectedFilter === item ? "bg-orange-600 text-white rounded-lg" : ""
+                className={`flex items-center justify-center flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200 ${
+                  selectedFilter === item
+                    ? "bg-orange-600 text-white rounded-lg"
+                    : ""
                 }`}
                 onClick={() => handleFilterClick(item)}
               >
-                <p className="p-3 text-xl font-semibold">
-                  {item}
-                </p>
+                <p className="p-3 text-xl font-semibold">{item}</p>
               </li>
             ))
           ) : (
