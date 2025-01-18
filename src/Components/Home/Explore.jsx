@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
+
 const Explore = ({ setSelectedFilter, selectedFilter }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
+  const scrollRef = useRef(null); // Ref for the filter bar
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,8 +56,10 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
     "Deserts",
   ];
 
+ 
+
   return (
-    <div ref={ref} className="flex justify-center mx-[4rem]">
+    <div ref={ref} className="flex flex-col items-center justify-center mx-[4rem]">
       <div className="w-full border-b-4 border-gray-300 py-10">
         <motion.h1
           variants={textVariants}
@@ -77,27 +81,41 @@ const Explore = ({ setSelectedFilter, selectedFilter }) => {
           needs.
         </motion.p>
 
+
         {/* Filter Bar */}
-        <ul className="flex items-center gap-8 mt-10 overflow-x-auto scrollbar-none scroll-smooth">
-          {items.length > 0 ? (
-            items.map((item) => (
-              <li
-                key={item}
-                className={`flex items-center justify-center flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200 ${
-                  selectedFilter === item
-                    ? "bg-orange-600 text-white rounded-lg"
-                    : ""
-                }`}
-                onClick={() => handleFilterClick(item)}
-              >
-                <p className="p-3 text-xl font-semibold">{item}</p>
-              </li>
-            ))
-          ) : (
-            <li>No categories available</li>
-          )}
-        </ul>
+        <div className="relative mt-10">
+
+
+          <ul
+            ref={scrollRef}
+            className="flex items-center gap-8 overflow-x-auto scrollbar-none scroll-smooth px-8"
+          >
+                    
+            {items.length > 0 ? (
+              items.map((item) => (
+                <li
+                  key={item}
+                  className={`flex items-center justify-center flex-shrink-0 sm:px-6 cursor-pointer hover:scale-95 duration-200 ${selectedFilter === item
+                      ? "bg-orange-600 text-white rounded-lg"
+                      : ""
+                    }`}
+                  onClick={() => handleFilterClick(item)}
+                >
+                  <p className="p-3 text-xl font-semibold">{item}</p>
+                </li>
+              ))
+            ) : (
+              <li>No categories available</li>
+            )}
+
+          </ul>
+   
+
+        </div>
+
+
       </div>
+      
     </div>
   );
 };

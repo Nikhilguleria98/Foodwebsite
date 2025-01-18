@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const MenuSection = ({ category, items }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
@@ -31,7 +31,7 @@ const MenuSection = ({ category, items }) => {
                   disabled={item.id in cartItems} 
                 >
                   {item.id in cartItems ? (
-                    <Link to="/cart" className="text-white">Go to Cart</Link> 
+                    <NavLink to="/cart" className="text-white">Go to Cart</NavLink> 
                   ) : (
                     "Add to Cart"
                   )}
